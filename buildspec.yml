@@ -6,4 +6,4 @@ phases:
   post_build:
     commands:
       - tail packaged-template.yaml
-      - aws cloudformation deploy --template-file $(CODEBUILD_SRC_DIR)/packaged-template.yaml --stack-name msa-stack-createItem --capabilities CAPABILITY_IAM --no-fail-on-empty-changeset --debug
+      - aws cloudformation deploy --template-file packaged-template.yaml --stack-name msa-stack-createItem --capabilities CAPABILITY_IAM --no-fail-on-empty-changeset --debug
