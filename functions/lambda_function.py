@@ -4,6 +4,7 @@ from boto3.dynamodb.conditions import Key
 import json
 import datetime
 import uuid
+import layer
 
 region = "us-west-2"
 session = Session(
