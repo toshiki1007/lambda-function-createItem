@@ -1,0 +1,14 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Create Lambda function by using AWS SAM.
+Resources:
+  CreateItemFunction:
+    Properties:
+      CodeUri: s3://msa-sam-repository/57099e39c51a6147091242e1993c3562
+      Handler: functions/lambda_function.lambda_handler
+      Layers:
+      - arn:aws:lambda:us-west-2:636729331386:layer:xray_sdk:1
+      Role: arn:aws:iam::636729331386:role/lambda_role_for_create_Item_on_DynamoDB
+      Runtime: python3.6
+      Timeout: 15
+    Type: AWS::Serverless::Function
+Transform: AWS::Serverless-2016-10-31
