@@ -1,0 +1,14 @@
+{
+    "CreateItemFunction": {
+        "lambda": {
+            "Input": {
+                "sellerId": "abcdefg",
+                "itemName": "sample4",
+                "author": "sample4",
+                "price": 1000,
+                "description": "sample4",
+                "itemImage": "sample4"
+            }
+        }
+    }
+}
